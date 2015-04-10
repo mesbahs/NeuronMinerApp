@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+    android:orientation="vertical" android:padding="5dp" >
+    <TextView android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true" 
+        android:text="Add New Service" android:textSize="20sp" /> 
+        
+    <TextView android:id="@+id/usertext" android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" android:layout_marginTop="100dp" 
+            android:text="Key" android:textSize="20sp" /> 
+            
+     <EditText android:id="@+id/userinput" android:layout_width="match_parent" 
+                android:layout_height="wrap_content" android:layout_alignBaseline="@+id/usertext" 
+                android:layout_toRightOf="@+id/usertext" /> 
+     <TextView android:id="@+id/userpass"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                 android:layout_below="@+id/usertext" android:layout_marginTop="50dp" 
+                 android:text="URL" android:textSize="20sp" />
+                
+     <EditText android:id="@+id/passinput" android:layout_width="match_parent" 
+                     android:layout_height="wrap_content" android:layout_alignBaseline="@+id/userpass" 
+                     android:layout_toRightOf="@+id/userpass" />
+     
+      <Button android:id="@+id/submit" android:layout_width="100dp" 
+                      android:layout_height="wrap_content" android:layout_below="@+id/userpass" 
+                      android:layout_marginTop="60dp" android:text="Submit" /> 
+                      
+       <Button android:id="@+id/exit" android:layout_width="100dp" 
+                          android:layout_height="wrap_content" android:layout_below="@+id/userpass" android:layout_marginLeft="110dp" android:layout_marginTop="60dp" android:layout_toRightOf="@+id/submit" android:text="Exit" />  
+</RelativeLayout>
+

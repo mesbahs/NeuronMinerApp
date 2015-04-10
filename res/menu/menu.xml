@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/home"
+        android:title="Home">
+    </item>
+     <item
+        android:id="@+id/charts"
+        android:title="Charts">
+    </item>
+     <item
+        android:id="@+id/similarity"
+        android:title="Neuron profile">
+    </item>
+
+</menu>

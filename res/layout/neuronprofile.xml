@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+<LinearLayout 
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical" 
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+   <WebView
+       android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+    />
+   <TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:background="#ffffff"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+ 
+    <TableRow android:id="@+id/tableRow1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        >
+
+        <TextView
+            android:id="@+id/TextView00"
+            android:layout_width="fill_parent"
+            
+            android:background="@drawable/mybutton"
+            android:text="neuron"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="serif" >
+
+</TextView>
+        <TextView
+            android:id="@+id/TextView01"
+            android:textStyle="bold"
+
+             android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+        
+    </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:id="@+id/TextView02"
+            android:text="age (days)"
+
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView03"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+        </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:id="@+id/TextView04"
+            android:text="volume (µm^3)"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:typeface="serif"></TextView>
+        </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:text="width (µm)"
+
+            android:id="@+id/TextView06"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView07"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:text="depth (µm)"
+            android:id="@+id/TextView08"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView09"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:text="#OfBifurcations"
+            android:id="@+id/TextView10"
+            android:textStyle="bold"
+            android:typeface="serif"
+             android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView11"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+
+     <TableRow
+         android:layout_margin="1dp"
+         android:layout_marginTop="10dp" >
+
+        <TextView
+            android:text="length (µm)"
+            android:id="@+id/TextView12"
+            android:textStyle="bold"
+            android:typeface="serif"
+             android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView13"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+     <TableRow
+         android:layout_margin="1dp">
+        <TextView
+            android:text="surface (µm^2)"
+            android:id="@+id/TextView14"
+            android:textStyle="bold"
+            android:typeface="serif"
+             android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView15"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+    <TableRow
+        android:layout_margin="1dp">
+        <TextView
+            android:text="height (µm)"
+            android:id="@+id/TextView16"
+            android:textStyle="bold"
+            android:typeface="serif"
+             android:background="@drawable/mybutton"
+             android:textColor="#ffffff"></TextView>
+        <TextView
+            android:id="@+id/TextView17"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"></TextView>
+    </TableRow>
+   
+   
+   
+  
+  
+</TableLayout>
+<Button
+    android:id="@+id/similar"
+    style="@style/button_text"
+    android:layout_width="wrap_content"
+    android:layout_height="29dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/mybutton"
+    android:text="Find similar neurons" />
+<Button
+     android:id="@+id/specificity"
+     style="@style/button_text"
+
+    android:layout_width="wrap_content"
+    android:layout_height="29dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/mybutton"
+     android:text="Define search criteria"
+
+      />
+
+</LinearLayout>
+</ScrollView>
+

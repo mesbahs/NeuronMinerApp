@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NeuronPlot</string>
+    <string name="morphname">MorphMeasures</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Add a service</string>
+    <string name="service_list">Select a service</string>
+    <string name="x_prompt">Select X axis</string>
+    <string name="y_prompt">Select Y axis</string>
+     <string name="btnproceed">Plot Data</string>
+      <string name="btnimport">Data profile</string>
+       <string name="plot">Plot</string>
+       <string name="neuron">Neurons</string>
+       <string name="swc">Swc files</string>
+       <string name="similar">Similar neurons</string>
+         <string name="selectanimal">Animal species</string>
+         <string name="charts">Charts</string>
+        <string name="download_progress">Download Progress:</string>
+     <string-array name="morp_arrays">
+        <item>volume</item>
+        <item>width</item>
+        <item>depth</item>
+        <item>height</item>
+        <item>length</item>
+        
+    </string-array>
+
+</resources>

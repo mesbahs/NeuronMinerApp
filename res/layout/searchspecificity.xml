@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/textborder"
+    android:padding="30dp" >
+ 
+    <!-- Thumbnail Image -->
+     <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" 
+        
+            android:layout_weight=".75"
+        android:textSize="@dimen/species"
+        android:text="Searching for neurons by morphological measurements. Please define the preferred percentage of each feauture sub space.  " />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:textSize="@dimen/species"
+        android:layout_below="@+id/intro"
+
+        android:textStyle="bold"
+        android:text="All:"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp" />
+    
+ <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all"
+        android:textSize="@dimen/species"
+        android:textStyle="bold"
+        android:text="Branch:"
+        android:layout_marginRight="2dp"
+         android:layout_marginTop="20dp" />
+ <TextView
+        android:id="@+id/bifurcation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/branch"
+        android:textSize="@dimen/species"
+        android:textStyle="bold"
+        android:text="Bifurcation:"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp" />
+
+ <EditText
+     android:id="@+id/editBifurcation"
+     android:layout_width="70dp"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/bifurcation"
+     android:layout_alignBottom="@+id/bifurcation"
+     android:layout_marginBottom="20dp"
+     android:layout_toRightOf="@+id/bifurcation"
+     android:layout_weight=".75"
+     android:background="@drawable/rounded_edittext"
+     android:ems="10"
+     android:inputType="text" />
+
+ <EditText
+     android:id="@+id/editbranch"
+     android:layout_width="70dp"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/branch"
+     android:layout_alignBottom="@+id/branch"
+     android:layout_alignLeft="@+id/editBifurcation"
+     android:ems="10"
+     android:inputType="text"
+     android:background="@drawable/rounded_edittext"
+     android:layout_weight=".75" />
+
+ <EditText
+     android:id="@+id/editall"
+     android:layout_width="70dp"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/editbranch"
+     android:layout_alignTop="@+id/all"
+     android:layout_weight=".75"
+     android:background="@drawable/rounded_edittext"
+     android:ems="10"
+     android:inputType="text" >
+
+ </EditText>
+
+ <Button
+     android:id="@+id/similar"
+     style="@style/button_text"
+     android:layout_width="wrap_content"
+     android:layout_height="29dp"
+
+     android:layout_below="@+id/editBifurcation"
+     android:layout_margin="40dp"
+
+    android:background="@drawable/mybutton"
+    android:text="Find similar neurons"
+    
+      />
+ 
+</RelativeLayout>
